@@ -1,3 +1,4 @@
+<?php
 /**
  * Main class for Moneris Multicurrency functionality
  *

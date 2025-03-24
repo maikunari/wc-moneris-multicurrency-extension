@@ -1,3 +1,4 @@
+<?php
 /**
  * Plugin Name: WC Moneris Multicurrency Extension
  * Plugin URI: https://sonicpixel.ca
@@ -36,7 +37,7 @@ function wc_moneris_multi_check_dependencies() {
             return false;
         }
 
-        if (!class_exists('WC_Moneris_Payment_Gateway')) {
+        if (!class_exists('WPHEKA_Moneris')) {
             add_action('admin_notices', function() {
                 echo '<div class="error"><p>' . 
                      __('WC Moneris Multicurrency Extension requires WC Moneris Payment Gateway to be installed and active.', 'wc-moneris-multicurrency-extension') . 
